@@ -1,3 +1,4 @@
+package primario;
 import visual.*;
 
 public class Main {

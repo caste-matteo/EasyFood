@@ -58,7 +58,7 @@ public class Main {
 
 			public void run() {
 				new CuciniamoJFrame().setVisible(true);
-				System.out.println();
+				System.out.println("cazzo");
 			}
 		});
 

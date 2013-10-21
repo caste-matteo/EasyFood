@@ -1,0 +1,20 @@
+Linguine al pesto wellness
+
+Salva: linguinepestowellness
+Autore: CucinaWellness
+Categoria: Primo
+Tempo: 20 minuti
+
+Prepara: pesto wellness
+	Salva: pestowellness
+	Tempo: 2 minuti
+	Strumenti: frullatore
+	Ingredienti: 40g di basilico, 15g di pinoli, 10g di parmigiano, 10g di aglio, 20g di olio extra vergine, 1pizzico di sale, 4cubetti di ghiaccio
+	Preparazione: mettere nel frullatore il basilico, i pinoli, l'aglio, il parmigiano e l'olio con i cubetti di ghiaccio. Frullare per qualche secondo
+	
+
+_
+
+Ingredienti: 280g di linguine, 160g di fagiolini, 200g di patate
+Preparazione: Preparare una dadolata di patate, tagliare i fagiolini a tocchetti e metterli a cuocere insieme alla pasta.
+	      Scolare la pasta al dente con le patate e i fagiolini e condire in una terrina fuori dal fuoco con il pesto. Decorare con qualche foglia di basilico.

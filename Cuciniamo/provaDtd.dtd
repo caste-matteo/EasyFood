@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!ELEMENT Ricetta (Opzioni, (Ricetta|Apri)*, ListaIngredienti, Procedimento) >
+<!ATTLIST Ricetta nome CDATA #REQUIRED >
+
+<!ELEMENT Opzioni (Salva|Autore|Categoria|Difficolta|Tempo|Privata|Strumenti|Festivita|Promemoria)* >
+
+<!ELEMENT Salva (#PCDATA)>
+<!ELEMENT Autore (#PCDATA)>
+<!ELEMENT Categoria (Superiore?, Inferiore?)>
+<!ELEMENT Superiore (#PCDATA)>
+<!ELEMENT Inferiore (#PCDATA)>
+<!ELEMENT Difficolta (#PCDATA)>
+<!ELEMENT Tempo (#PCDATA)>
+<!ELEMENT Privata (#PCDATA)>
+<!ELEMENT Strumenti (Strumento)*>
+<!ELEMENT Strumento (#PCDATA)>
+<!ELEMENT Festivita (#PCDATA)>
+<!ELEMENT Promemoria (#PCDATA)>
+
+<!ELEMENT Apri (File | Database) >
+<!ELEMENT File (#PCDATA)>
+<!ELEMENT Database (#PCDATA)>
+<!ATTLIST Database utente CDATA #IMPLIED >
+
+<!ELEMENT ListaIngredienti (Ingrediente)+ >
+<!ELEMENT Ingrediente EMPTY >
+<!ATTLIST Ingrediente 
+	tipo CDATA #REQUIRED
+	quantita CDATA #IMPLIED 
+	misura CDATA #IMPLIED >
+
+<!ELEMENT Procedimento (#PCDATA) >

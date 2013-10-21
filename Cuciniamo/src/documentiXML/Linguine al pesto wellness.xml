@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Ricetta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nome="Linguine al pesto wellness">
+    <Opzioni>
+        <Salva>linguinepestowellness</Salva>
+        <Autore>CucinaWellness</Autore>
+        <Tempo>22</Tempo>
+    </Opzioni>
+    <Ricetta nome="pesto wellness">
+        <Opzioni>
+            <Salva>pestowellness</Salva>
+            <Tempo>2</Tempo>
+            <Strumenti>
+                <Strumento>frullatore</Strumento>
+            </Strumenti>
+        </Opzioni>
+        <ListaIngredienti>
+            <Ingrediente misura="g" quantita="40" tipo="basilico"/>
+            <Ingrediente misura="g" quantita="15" tipo="pinoli"/>
+            <Ingrediente misura="g" quantita="10" tipo="parmigiano"/>
+            <Ingrediente misura="g" quantita="10" tipo="aglio"/>
+            <Ingrediente misura="g" quantita="20" tipo="olio extra vergine"/>
+            <Ingrediente misura="pizzico" quantita="1" tipo="sale"/>
+            <Ingrediente misura="cubetti" quantita="4" tipo="ghiaccio"/>
+        </ListaIngredienti>
+        <Procedimento>mettere nel frullatore il basilico, i pinoli, l'aglio, il parmigiano e l'olio con i cubetti di ghiaccio. Frullare per qualche secondo</Procedimento>
+    </Ricetta>
+    <ListaIngredienti>
+        <Ingrediente misura="g" quantita="280" tipo="linguine"/>
+        <Ingrediente misura="g" quantita="160" tipo="fagiolini"/>
+        <Ingrediente misura="g" quantita="200" tipo="patate"/>
+    </ListaIngredienti>
+    <Procedimento>Preparare una dadolata di patate, tagliare i fagiolini a tocchetti e metterli a cuocere insieme alla pasta. Scolare la pasta al dente con le patate e i fagiolini e condire in una terrina fuori dal fuoco con il pesto. Decorare con qualche foglia di basilico.</Procedimento>
+</Ricetta>

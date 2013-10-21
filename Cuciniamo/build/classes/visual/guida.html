@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>
+            <h1>Guida all'utilizzo di <strong>Cuciniamo: parser di ricette</strong></h1>
+            
+            <ul>
+                <li><a href="#intro">Introduzione</a></li>
+                <li><a href="#nome">Nome della ricetta</a></li>
+                <li><a href="#opzioni">Informazioni aggiuntive</a></li>
+                <li><a href="#sottoricette">Inserimento di sottoricette</a></li>
+                <li><a href="#ingredienti">Ingredienti necessari e preparazione</a></li>
+                <li><a href="#auto">Automatizzazioni fornite dal software</a></li>
+                <li><a href="#esempio">Un esempio completo</a></li>
+            </ul>
+            
+            <a name="intro"></a><p>Il software permette di analizzare ricette scritte nel linguaggio <strong>cuciniamo</strong>
+             e di ottenere una serie di informazioni utili alla preparazione di una ricetta.<br />
+             Una ricetta scritta in tale linguaggio è strutturata in quattro sezioni:</p>
+            <ol>
+                <li>Nome della ricetta</li>
+                <li>Informazioni aggiuntive (opzionali)</li>
+                <li>Inserimento di sottoricette (opzionale)</li>
+                <li>Ingredienti necessari e preparazione</li>
+            </ol>
+            <p>Ogni sezione deve essere separata da uno o più ritorni a capo, inoltre deve essere segnalata la fine 
+            della preparazione con il carattere <b>_</b> (underscore).<br/>
+            E' possibile utilizzare i commenti nella stesura della ricetta attraverso l'apertura <b>(*</b> e la 
+            chiusura <b>*)</b>, questi verranno ignorati dal parser.</p>
+            
+            <a name="nome"></a><h2>Nome della ricetta</h2>
+            <p>Ogni ricetta deve iniziare con il nome che gli verrà assegnato, &egrave; concesso 
+            l'esclusivo utilizzo di lettere (maiuscole e minuscole) e spazi.</p>
+            
+            <a name="opzioni"></a><h2>Informazioni aggiuntive</h2>
+            <p>E' quindi possibile passare alla sezione di informazioni aggiuntive, queste permettono di avere 
+            un maggiore dettaglio della ricetta ed inoltre consentono al sotware di eseguire stime pi&ugrave;
+            accurate.<br />
+            Un'informazione aggiuntiva &egrave; data da una parola chiave seguita da <b>:</b> e dal valore che 
+            si vuole impostare, il significato del valore cambia in base alla parola chiave.<br />
+            E' possibile passare un'informazione aggiuntiva una sola volta, in caso venga passata pi&ugrave;
+            volte la stessa informazione verr&agrave; generato un warning e solo la prima avr&agrave; effetto.<br />
+            Di seguita la lista delle informazioni che &egrave; possibile dichiarare, in grassetto le parole 
+            chiave ed in corsivo i parametri da passare:</p>
+            <ul>
+                <li><u><b>Salva:</b> <i>nomesalvataggio</i></u>: nome con cui si desidera che la ricetta venga salvata sul 
+                    database remoto, se assente la ricetta non verr&agrave salvata. Per il nome sono concesse 
+                    esclusivamente lettere (maiuscole o minuscole) e non spazi.</li>
+                <li><u><b>Autore:</b> <i>nomeautore</i></u>: nickname dell'autore della ricetta, se assente non verr&agrave;
+                    assegnata a nessuno (analogamente al caso precedente non sono possibili spazi).</li>
+                <li><u><b>Categoria:</b> <i>categoria inferiore</i> <i><strike>(categoria superiore)</strike></i></u>: 
+                    categoria di cui la ricetta fa parte, in caso di ambiguit&agrave; &egrave; possibile dichiarare 
+                    esplicitamente la categoria superiore (Es: <i>Categoria: Torte (Dolci)</i>)</li>
+                <li><u><b>Difficolt&agrave;:</b> <i>valore da 1 a 10</i></u>: difficolt&agrave; della ricetta.</li>
+                <li><u><b>Tempo:</b> <i>tempo preparazione</i></u>: tempo di preparazione della ricetta, pu&ograve; 
+                    essere espresso in ore e minuti ma non in quarti/mezzi ecc... (Es: <i>Tempo: 1 ora e 30 minuti</i>,
+                    <i>Tempo: 2 ore</i>, <i>Tempo: 200 minuti</i>, <u>non va bene</u> <i>Tempo: 1 ora e un quarto</i> o 
+                    <i>Tempo: Un'ora e 1/2</i>).</li>
+                <li><u><b>Privata:</b> <i>si/no</i></u>: indica se una ricetta sar&agrave; visibile anche agli altri utenti.</li>
+                
+                <li><u><b>Strumenti:</b> <i>lista di strumenti separati da virgola</i></u>: strumenti necessari per una corretta
+                    preparazione della ricetta (in alternativa &egrave; possibile utilizzare la parola chiave <b>usa</b>).</li>
+                <li><u><b>Festivit&agrave;:</b> <i>nome festivit&agrave;</i></u>: festivit&agrave; a cui si vuole associare la ricetta 
+                (Natale, Compleanno, San Valentino, ...)</li>
+            </ul>
+            <p><b>NB:</b> per aumentare la portabilit&agrave; tra sistemi diversi (mac, windows, linux, ...) &egrave; consigliabile 
+                l'l'uso delle parole chiave senza accento (Es: <i>difficolt<b>a</b></i> anzich&eacute; <i>difficolt<b>&agrave;</b></i>), 
+                questo perch&eacute; il cambio di sistema operativo comporta il cambio del set di caratteri.</p>
+            
+            <a name="sottoricette"></a><h2>Inserimento di sottoricette</h2>
+            <p>Nonostante sia opzionale <u>&egrave vivamente consigliato</u> di dividere una ricetta in pi&ugrave; sottoricette (ovvero 
+            in pi&ugrave; passi elementari), data la struttura del linguaggio infatti si potr&agrave; beneficiare del salvataggio separato 
+            dei vari passi di una ricetta cos&igrave; da poterne facilmente beneficiare in futuro anche su altre ricette, inoltre l'aggiornamento 
+            di una sottoricetta comporter&agrave; l'aggiornamento automatico di tutte le ricette che la sfruttano (se ad esempio si cambia 
+            la preparazione del pan di spagna, automaticamente tutte le ricette di torte che ne fanno uso per la creazione verranno aggiornate).<br />
+            Per inserire una sottoricetta &egrave; sufficiente utilizzare la parola chiave <b>prepara:</b> seguita dal nome della sottoricetta, 
+            dopo si proseguir&agrave; all'inserimento delle ultime tre sezioni come da abitudine. Per poter capire in quale punto una sottoricetta 
+            finisca (anche perch&egrave; &egrave; possibile inserire altre sottoricette nelle sottoricette e cos&igrave; via) <u>&egrave; obbligatorio 
+            utilizzare il simbolo di chiusura</u> <b>_</b> (underscore).
+            
+            <a name="ingredienti"></a><h2>Ingredienti necessari e preparazione</h2>
+            Infine si pu&ograve; passare all'inserimento degli ingredienti necessari attravero l'uso della parola chiave <b>Ingredienti:</b> e delle 
+            istruzioni per la preparazione attraverso la parola chiave <b>preparazione:</b> (o <b>procedimento:</b>).<br />
+            Per l'inserimento degli ingredienti &egrave; necessario inserirli uno alla volta separati da virgole, il sistema &egrave; in grado di 
+            interpretare l'unit&agrave; di misura se inserita immediatamente dopo la quantit&agrave; senza lasciare spazi (e.g.: <code>40g di farina</code> 
+            oppure <code>farina 40g</code> &egrave corretto, <code>40 g di farina</code> <b>no</b>!). E' possibile inserire come quantit&agrave; <i>qb</i> 
+            oppure <i>q.b.</i> per dichiare piccole quantit&agrave; di un ingredienti, inoltre nell'inserimento di pi&ugrave; ingredienti con la stessa 
+            unit&agrave; di misura &egrave; possibile non inserirte tale informazione dal secondo ingrediente in poi ricordandosi di usare la forma 
+            <i>XX di qualcosa</i>(e.g.: <code>40g di farina, 30 di zucchero</code> aggiunger&agrave; <code>g</code> allo <code>zucchero</code>).<br />
+            Per quanto riguarda la <b>preparazione</b> &egrave; possibile scrivere qualsiasi cosa, inoltre tra parentesi quadre (<b>[</b> e <b>]</b>) 
+            &egrave; possibile importare un file immagine dal disco, se si vuole inserire una descrizione basta inserire <b>;</b> dopo il percorso del file 
+            e scrivere ci&ograve; che si preferisce prima di <b>]</b>, un esempio per sistemi unix pu&ograve; essere 
+            <code><b>[</b>/percorso/alla/tua/immagine.jpg<b>;</b>descrizione che preferisci<b>]</b></code>.<br />
+            <b><u>NB:</u> E' <u>obbligatorio</u> per garantire una corretta compilazione riportare il carattere _ (underscore) alla fine del procedimento!</b>
+            
+            
+            <a name="auto"></a><h2>Automatizzazioni fornite dal software</h2>
+            <p>Il software, in base anche alle informazioni opzionali (se inserite), &egrave; in grado di eseguire le seguenti operazioni:</p>
+            <ul>
+                <li>Salvare automaticamente la ricetta sul db con il nome utente fornito</li>
+                <li>Trovare l'id della categoria inserita, in caso nessuna categoria sia indicata inserir&agrave; la ricetta in nella sottocategoria <i>Altro</i> 
+                    della categoria <i>Altro</i>.</li>
+                <li>Se si forniranno le difficolt&agrave; di tutte le ricette &egrave; in grado di stabilirne quella complessiva (la massima tra tutte le sottoricette).</li>
+                <li>E' in grado di calcolare il tempo in minuti e quindi fare statistiche sul tempo complessivo prendendo come tempo minimo il massimo tra tutte le 
+                ricette (caso fortunato in cui tutte le operazioni possono essere fatte in parallelo) e come tempo massimo la somma di tutti i tempi (caso peggiore in cui 
+                per andare avanti bisogna sempre aver finito la sottoricetta precedente), inoltre il sistema avvertir&agrave; nel caso una sottoricetta (ad un qualsiasi livello 
+                di profondit&agrave;) prender&agrave; pi&ugrave; tempo della ricetta principale.</li>
+                <li>Salvare la ricetta sul database in maniera privata, in modo tale da non renderla disponibile agli altri utenti.</li>
+                <li>Listare gli strumenti necessari alla sola ricetta, fare la summa listare gli strumenti necessari per il completamento della ricetta passando per tutte le 
+                sottoricette, listare esclusivamente gli strumenti aggiuntivi necessari per il completamento delle sottoricette.</li>
+                <li>Trovare l'id della festivit&agrave; inserita.</li>
+                <li>Listare la lista di ingredienti necessari alla sola ricetta (suppendo tutte le sottoricette gi&agrave; pronte) oppure tutti gli ingredienti necessari al 
+                completamento sia della ricetta che di tutte le sottoricette.</li>
+                <li>Inserire i riferimenti alle immagini all'interno del procedimento di una ricetta.</li>
+            </ul>
+
+            <a name="esempio"></a><h2>Un esempio completo</h2>
+            <pre></pre>
+            
+        </div>
+    </body>
+</html>

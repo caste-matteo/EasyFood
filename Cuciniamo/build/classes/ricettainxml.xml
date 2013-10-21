@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Ricetta SYSTEM "../src/cuciniamo.dtd">
+<!--Ricetta nome="Torta alla panna" xmlns:xs="oud.xsd" xs:noNameSpaceSchemaLocation="out.xsd"-->
+<Ricetta nome="Torta alla panna" >
+	
+	<Opzioni>
+		<Salva>tortallapanna.txt</Salva>
+		<Categoria>
+			<Superiore>Dolci</Superiore>
+			<Inferiore>Torte</Inferiore>
+		</Categoria>
+		<Difficolta>7</Difficolta>
+		<Autore>ptommasi</Autore>
+		<Tempo>110</Tempo>
+		<Privata>true</Privata>
+		<Strumenti>
+			<Strumento>marisa</Strumento>
+			<Strumento>fruste elettriche</Strumento>
+		</Strumenti>
+		<Festivita>San Valentino</Festivita>
+		<Promemoria>Forno a 180°</Promemoria>
+	</Opzioni>
+	
+	<Apri>
+		<NomeRicetta>Pandispagna</NomeRicetta>
+	</Apri>
+	
+	<ListaIngredienti>
+		<Ingrediente tipo="zucchero" quantita="110" misura="grammi" />
+	</ListaIngredienti>
+
+	<Procedimento>Fai la torta</Procedimento>
+	
+</Ricetta>

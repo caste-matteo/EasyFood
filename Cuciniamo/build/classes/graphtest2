@@ -1,0 +1,25 @@
+torta alla panna
+
+Prepara: crema
+	Ingredienti: qualcosa
+	Preparazione: p_
+
+Prepara: pan di spagna
+	Prepara: innestato
+		Prepara: miao
+			Ingredienti: bau
+			Preparazione: ciao_
+		Prepara: miao
+			Ingredienti: bau
+			Preparazione: ciao_
+		Prepara: miao
+			Ingredienti: bau
+			Preparazione: ciao_
+		Ingredienti: bau
+		Preparazione: ciao_
+	Ingredienti: qualcosa
+	Preparazione: bau_
+
+
+Ingredienti: qualcosa
+Preparazione: p.

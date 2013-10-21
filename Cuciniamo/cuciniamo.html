@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        /*<![CDATA[*/
+        body
+        {
+            font-size: 12pt;
+            margin-left: auto;
+            margin-right: auto;
+            width: 750px;
+            background-color: #FFFFFF;
+            font-family: Verdana,Arial,Helvetica,sans-serif;
+        }
+        
+        #page
+        {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        table.contentTable
+        {
+            width: 90%;
+            margin: 10px auto 10px auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        tr
+        {
+            background-color: red;
+        }
+        
+        
+        th
+        {
+            padding: 3px 7px 3px 7px;
+            font-weight: bold;
+        }
+        th.tableHeader
+        {
+            background-color: #0066CC;
+            color: #FFFFFF;
+            text-align: center;
+            border-top-style: groove;
+        }
+        
+        th.rowHeader
+        {
+            width: 45%;
+            text-align: left;
+            color: #FFFFFF;
+            background-color: #8DB6CD;
+        }
+        
+        td
+        {
+            padding: 3px 7px 3px 7px;
+            font-size: 10pt;
+            text-align: center;
+            color: #40458C;
+            background-color: #BCD2EE;
+        }
+        
+        div#descr
+        {
+            margin-top: 5px;
+            margin-bottom: 1px;
+            text-align: center;
+        }
+        
+        div.header
+        {
+            text-align: center;
+            background-color: #0066CC;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin: 10px auto;
+            font-weight: bold;
+            font-size: 12pt;
+            color: #FFFFFF;
+            cursor: pointer;
+            border-top-style: groove;
+        }
+        
+        div#supertitle
+        {
+            font-weight: bold;
+            font-size: 18pt;
+            text-align: center;
+        }
+        
+        div#subtitle
+        {
+            text-align: center;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        div#subsubtitle
+        {
+            text-align: center;
+            font-size: 10pt;
+        }
+        div#title
+        {
+            margin-bottom: 20px;
+        }
+        
+        a:link
+        {
+            text-decoration: none;
+            color: #40458C;
+        }
+        
+        a:visited
+        {
+            text-decoration: none;
+            color: #59338A;
+        }
+        
+        a:hover
+        {
+            text-decoration: underline;
+        }
+        
+        #footer
+        {
+            border-top: 1px dotted #000;
+        }
+        
+        #footer #credits
+        {
+            color: #000;
+            font-size: 6pt;
+            text-align: center;
+            font-weight: bold;
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: none;
+            margin: 5px 0 5px 0;
+            padding: 0px 0 0 0;
+        }
+        
+        /*]]>*/
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    
+    <title>Cuciniamo, un parser di ricette - Pierpaolo Tommasi</title>
+</head>
+<body>
+    <div id="page">
+        <div class="content" id="title">
+            <div id="supertitle">
+                Linguaggio per la gestione di un ricettario</div>
+            <div id="subtitle">
+                Software per una facile e versatile gestione di un ricettario</div>
+            <div id="subsubtitle">
+                Esame di Linguaggi e Modelli Computazionali LS</div>
+        </div>
+        <div class="content" id="abstract">
+            <div class="header" id="abstractHeader" onclick="$('#abstractValues').toggle('slow')">
+                Abstract
+            </div>
+            <div class="values" id="abstractValues" style="">
+                <div id="descr">
+                    <div>
+                    Il progetto riguarda lo sviluppo di un software che metta ordine in una ricetta, la cataloghi e la renda disponibile in varie visualizzazioni
+                     (per aiutare l'utente nella preparazione).
+                    </div>
+                </div>
+                <table class="contentTable" id="abstractTable" summary="Project Overview" cellspacing="2">
+                    <tbody>
+                        <tr>
+                            <th scope="col" class="tableHeader" colspan="2">
+                                Specifiche
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                Linguaggio di Programmazione
+                            </th>
+                            <td>
+                                Java 6
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                <div>
+                                    Generazione automatica di lexer e parser</div>
+                            </th>
+                            <td>
+                                <div>
+                                    <div>
+                                        JavaCC 5.0 &amp; J.T.B. 1.3.2
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                Ambiente di sviluppo principale:
+                            </th>
+                            <td>
+                                Eclipse 3.6 (Helios) + Ant + plugin JavaCC
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                Ambiente di sviluppo GUI:
+                            </th>
+                            <td>
+                                NetBeans 7
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                Altre librerie:
+                            </th>
+                            <td>
+                                <ul style="text-align:left">
+                                <li><b>Jgraph</b> per graficare una ricetta</li>
+                                <li><b>MySql-Connector</b> per la connessione a database remoti</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="content" id="author">
+            <div class="header" id="authorHeader" onclick="$('#authorValues').toggle('slow')">
+                Autore
+            </div>
+            <div class="values" id="authorValues" style="">
+                <table class="contentTable" id="authorTable" summary="About the author" cellspacing="2">
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                Nome
+                            </th>
+                            <td>
+                                Pierpaolo Tommasi
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                Contatto
+                            </th>
+                            <td>
+                                <a href="mailto:pierpaolo.tommasi@gmail.com">pierpaolo.tommasi@gmail.com</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="content" id="downloads">
+            <div class="header" id="downloadsHeader" onclick="$('#downloadsValues').toggle('slow')">
+                Downloads
+            </div>
+            <div class="values" id="downloadsValues" style="display:none;">
+                <table class="contentTable" id="downloadsTable" summary="Downloads" cellspacing="2">
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                Presentazione
+                            </th>
+                            <td>
+                                <a href="./cuciniamo.pdf">cuciniamo.pdf</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rowHeader">
+                                File sorgenti o jar compilati
+                            </th>
+                            <td>
+                                Contattare l'autore
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul id="credits">
+            <li>valid <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> / <a
+                href="http://jigsaw.w3.org/css-validator/check/referer">CSS 2.1</a></li>
+        </ul>
+    </div>
+</body>
+</html>

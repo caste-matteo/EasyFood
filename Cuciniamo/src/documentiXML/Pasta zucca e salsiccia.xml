@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Ricetta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nome="Pasta zucca e salsiccia">
+    <Opzioni>
+        <Salva>pastazuccasalsiccia</Salva>
+        <Autore>ptommasi</Autore>
+        <Difficolta>6</Difficolta>
+        <Tempo>50</Tempo>
+        <Strumenti>
+            <Strumento>wok</Strumento>
+        </Strumenti>
+    </Opzioni>
+    <Ricetta nome="salsicce tirate con il vino">
+        <Opzioni>
+            <Difficolta>5</Difficolta>
+            <Tempo>30</Tempo>
+        </Opzioni>
+        <ListaIngredienti>
+            <Ingrediente quantita="4" tipo="salsicce"/>
+            <Ingrediente tipo="farina di grano duro"/>
+            <Ingrediente tipo="vino bianco"/>
+            <Ingrediente quantita="0" tipo="olio"/>
+        </ListaIngredienti>
+        <Procedimento>prendere le salsicce, stemperarle con poco vino bianco (viene assoribito) e poi metterle a cuocere con un filo d'olio.</Procedimento>
+    </Ricetta>
+    <Ricetta nome="soffritto di cipolle e zucca">
+        <Opzioni>
+            <Difficolta>6</Difficolta>
+            <Tempo>20</Tempo>
+        </Opzioni>
+        <ListaIngredienti>
+            <Ingrediente misura="g" quantita="50" tipo="cipolla"/>
+            <Ingrediente misura="piatto" quantita="1" tipo="zucca a cubetti piccoli"/>
+            <Ingrediente quantita="0" tipo="rosmarino"/>
+            <Ingrediente quantita="0" tipo="sale"/>
+        </ListaIngredienti>
+        <Procedimento>prepare un soffritto con mezza cipolla tritata ed un piatto di zucca a cubetti piccoli (altrimenti non cuociono), se c'� pochissimo rosmarino e salare leggermente.</Procedimento>
+    </Ricetta>
+    <Ricetta nome="brodo vegetale">
+        <Opzioni>
+            <Tempo>0</Tempo>
+        </Opzioni>
+        <ListaIngredienti>
+            <Ingrediente quantita="2" tipo="dadi star vegetale"/>
+            <Ingrediente misura="l" quantita="1" tipo="acqua"/>
+        </ListaIngredienti>
+        <Procedimento>fai riscaldare l'acqua con i dadi dentro.</Procedimento>
+    </Ricetta>
+    <ListaIngredienti>
+        <Ingrediente misura="ml" quantita="250" tipo="panna fresca"/>
+        <Ingrediente misura="g" quantita="400" tipo="pasta fresca"/>
+    </ListaIngredienti>
+    <Procedimento>con soffritto di cipolla e zucca leggermente cotti aggiungere un po' di brodo vegetale (ed un po' d'acqua) e stufare. unire metˆ del soffritto zucca e cipolla alla salsiccia e frullare l'altra metˆ con 250ml di panna fresca. Unire il tutto e cuocere per un po'. Consiglio: unire panna frullata con intruglio, al resto del sugo assieme anche alla pasta in scottatura in un wok.</Procedimento>
+</Ricetta>

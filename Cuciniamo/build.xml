@@ -1,0 +1,60 @@
+<project name="Cuciniamo" basedir=".">
+
+	<property name="srcDir" value="src"/>
+	<property name="JavaCChome" value="/Users/pierpytom/Universita/Linguaggi/download/bin/javacc-3.2/bin/lib"/>
+	<property name="JTBhome" value="/Users/pierpytom/Universita/Linguaggi/download/bin/jtb132.jar" />
+	<property name="completePath" value="/Users/pierpytom/Dropbox/workspace/Cuciniamo" />
+
+	<target name="JavaCC on Cucin[...].jj" >
+		<javacc target="${srcDir}/CuciniamoGrammar.jj" outputdirectory="${srcDir}" javacchome="${JavaCChome}"></javacc>
+	</target>
+	
+	<target name="JTB on Cucin[...].jj">
+		<java jar="${JTBhome}" failonerror="true" fork="true" dir="${completePath}/${srcDir}">
+		         <arg value="CuciniamoGrammar.jj"/>
+		</java>
+	</target>
+	
+	<target name="JavaCC on jtb.out.jj">
+		<javacc target="${srcDir}/jtb.out.jj" outputdirectory="${srcDir}" javacchome="${JavaCChome}"></javacc>
+	</target>
+	
+	<target name="Compile all">
+		<javac srcdir="${srcDir}" destdir="bin"/>
+	</target>
+
+	<target name="Clear JavaCC files">
+		<delete>
+			<fileset dir="." includes="${srcDir}/ParseException.java"/>
+			<fileset dir="." includes="${srcDir}/RicettaParser.java"/>
+			<fileset dir="." includes="${srcDir}/RicettaParserConstants.java"/>
+			<fileset dir="." includes="${srcDir}/RicettaParserTokenManager.java"/>
+			<fileset dir="." includes="${srcDir}/SimpleCharStream.java"/>
+			<fileset dir="." includes="${srcDir}/Token.java"/>
+			<fileset dir="." includes="${srcDir}/TokenMgrError.java"/>
+		</delete>
+	</target>		
+						
+	<target name="Clear JTB files &amp; folders">
+		<delete dir="${srcDir}/syntaxtree" />
+		<delete dir="${srcDir}/visitor" />
+		<delete>
+			<fileset dir="." includes="${srcDir}/jtb.out.jj"/>
+		</delete>
+	</target>
+
+    <target name="Run RicettaParser">
+        <java classname="RicettaParser" classpath="bin" fork="true" />
+    </target>
+
+	<target name="Clear then JavaCC &amp; compile" depends="Clear JavaCC files,JavaCC on Cucin[...].jj,Compile all" />
+	
+	<target name="Create JJDoc">
+		<jjdoc 
+		    target="${srcDir}/CuciniamoGrammar.jj" 
+		    outputfile="${srcDir}/CuciniamoGrammarBNF.html"
+		    javacchome="${JavaCChome}"
+		/>
+	</target>
+	
+</project>

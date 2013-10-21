@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="Ricetta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Opzioni"/>
+        <xs:element ref="Apri"/>
+        <xs:element ref="ListaIngredienti"/>
+        <xs:element ref="Procedimento"/>
+      </xs:sequence>
+      <xs:attribute name="nome" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Opzioni">
+    <xs:complexContent>
+      <xs:all>
+        <xs:element ref="Salva"/>
+        <xs:element ref="Categoria"/>
+        <xs:element ref="Difficolta"/>
+        <xs:element ref="Autore"/>
+        <xs:element ref="Tempo"/>
+        <xs:element ref="Privata"/>
+        <xs:element ref="Strumenti"/>
+        <xs:element ref="Festivita"/>
+        <xs:element ref="Promemoria"/>
+      </xs:all>
+    </xs:complexContent>
+  </xs:element>
+  
+  <xs:element name="Salva" type="xs:NCName"/>
+  
+  <xs:element name="Categoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Superiore"/>
+        <xs:element ref="Inferiore"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Superiore" type="xs:NCName"/>
+  <xs:element name="Inferiore" type="xs:NCName"/>
+  
+  <xs:element name="Difficolta">
+	  <xs:simpleType>
+	     <xs:restriction base="xs:positiveInteger" >
+			 <xs:minInclusive value="1" />
+			 <xs:maxExclusive value="10" />
+		 </xs:restriction>
+	  </xs:simpleType>
+  </xs:element>
+  <xs:element name="Autore" type="xs:NCName"/>
+  <xs:element name="Tempo" type="xs:positiveInteger"/>
+  <xs:element name="Privata" type="xs:boolean"/>
+  
+  <xs:element name="Strumenti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Strumento"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Strumento" type="xs:string"/>
+  
+  <xs:element name="Festivita" type="xs:string"/>
+  <xs:element name="Promemoria" type="xs:string"/>
+  
+  <xs:element name="Apri" >
+    <xs:complexType>
+		<xs:choice>
+			<xs:element ref="File" />
+		    <xs:element ref="Database" />
+		</xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="File" type="xs:string"/>
+  <xs:element name="Database" type="xs:NCName">
+	  <xs:complexType>
+	    <xs:attribute name="utente" use="optional" type="NCName">	  
+	  </xs:complexType>
+  </xs:element>
+  
+  
+  <xs:element name="ListaIngredienti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Ingrediente"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Ingrediente">
+    <xs:complexType>
+      <xs:attribute name="tipo" use="required" type="xs:NCName"/>
+      <xs:attribute name="quantita" use="optional" type="xs:positiveInteger"/>
+      <xs:attribute name="misura" use="optional" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Procedimento" type="xs:string"/>
+
+</xs:schema>

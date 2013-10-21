@@ -1,0 +1,45 @@
+torta alla panna
+
+Salva: tortapanna
+Autore: ptommasi
+Festivita: San Valentino
+Categoria: Torte (Dolci)
+Difficolta: 7
+Privata: si
+Strumenti: marisa
+Tempo: 1 ora
+
+Prepara: crema
+	Salva: crema
+	Tempo: 30 minuti
+	Strumenti: fruste
+	Ingredienti: 6 tuorli, 220g zucchero, 120g farina, 1l latte, 2 scorze di limone
+	Preparazione: frulla prima i tuorli delle uova con zucchero e vanillina, poi metti la farina, poi il latte poco alla volta.
+				Puoi usare le fruste elettriche ma a velocità minima_
+
+Prepara: pan di spagna
+	Salva: pandispagna
+	Autore: giallozafferano
+	Tempo: 1 ora
+	Ingredienti: 75g di farina, 75g di fecola di patate, 5 uova, 1bustina di vanillina, 1pizzico di sale, 150g zucchero
+	Strumenti: teglia quadrata, fruste elettriche
+
+	Preparazione: Per la preparazione del pan di Spagna, dividete gli albumi dai tuorli [immagine1.jpg;albumi divisi] mettendoli 
+	in due ciotole grandi separate [immagine2.jpg]; iniziate a sbattere con l'aiuto delle fruste elettriche, o della planetaria, i tuorli con metà 
+	dello zucchero [immagine3] fino ad ottenere un composto spumoso, gonfio e di colore giallo chiaro [immagine3.jpg;composto ottenuto].
+	Sbattete ora, dopo aver pulito molto bene le vostre fruste, anche gli albumi ([immagine5.jpg]) e dopo circa 5 minuti quando saranno già abbastanza gonfi e bianchi, 
+	aggiungete il restante zucchero [immagine6.jpg] e proseguite a montare ancora per qualche minuto (il trucco per sapere se i bianchi sono montati a neve davvero ferma 
+	sta nell'inclinare leggermente la ciotola usata, se il composto scivola ancora vuol dire che non è pronto, al contrario se è ben montato non si muoverà 
+	dalle pareti della vostra ciotola).
+	Unite gli albumi montati ai turli montati (anche in un'altra ciotola più grande) e a questo punto aggiungete la farina e la fecola di patate setacciate insieme [immagine7.jpg] 
+	(volendo la vanillina), versandole nel composto tramite un setaccio per far si che non si formino grumi.
+	Mescolate il tutto con un cucchiaio di legno fino ad ottenere un composto omogeneo, facendo attenzione a non smontarlo.
+	Imburrate [immagine8.jpg] e infarinate [immagine9.jpg] per bene una teglia rotonda a cerniera del diametro di 24 cm 
+	e versate l'impasto [immagine10.jpg] al centro dello stampo livellandolo per bene [immagine11.jpg].
+	Fate preriscaldare il forno a 180° e infornate il vostro pan di spagna per almeno 35-40 minuti senza mai aprire il forno nella prima mezz'ora di cottura.
+	Estraete lo stampo dal forno [immagine12.jpg;pan di spagna prontos] e fate raffreddare il pan di spagna nello stampo prima di aprirlo.
+
+
+Ingredienti: panna
+Preparazione: Taglia a metà il pan di spagna, riempilo con la crema, guarnisci con la panna.
+

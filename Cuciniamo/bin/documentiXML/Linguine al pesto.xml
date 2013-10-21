@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Ricetta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nome="Linguine al pesto">
+    <Opzioni>
+        <Salva>linguinealpesto</Salva>
+        <Autore>gialloZafferano</Autore>
+        <Tempo>40</Tempo>
+    </Opzioni>
+    <Ricetta nome="pesto">
+        <Opzioni>
+            <Salva>pesto</Salva>
+            <Tempo>20</Tempo>
+        </Opzioni>
+        <ListaIngredienti>
+            <Ingrediente misura="g" quantita="50" tipo="basilico"/>
+            <Ingrediente misura="cucchiai" quantita="2" tipo="pecorino"/>
+            <Ingrediente misura="cucchiai" quantita="6" tipo="parmigiano"/>
+            <Ingrediente misura="spicchi" quantita="2" tipo="aglio"/>
+            <Ingrediente misura="g" quantita="15" tipo="pinoli"/>
+            <Ingrediente tipo="olio"/>
+            <Ingrediente misura="pizzico" quantita="1" tipo="sale"/>
+        </ListaIngredienti>
+        <Procedimento>Per preparare il pesto alla genovese bisogna innanzitutto precisare che le foglie di basilico non vengano lavate, ma pulite con un panno morbido (1 -2), e che si tratti di basilico ligure o Genovese, a foglie strette (e non quello meridionale a foglie grosse, che spesso ha un aroma di menta). Iniziate la preparazione del pesto ponendo l'aglio sbucciato nel mortaio (2) assieme a qualche grano di sale grosso (4). Cominciate a pestare (4) e quando l'aglio si sarà ridotto in crema (5), aggiungete le foglie di basilico insieme ad un pizzico di sale grosso (6), che servirà a frantumare meglio le fibre e a mantenere un bel colore verde acceso, schiacciate, quindi, il basilico contro le pareti del mortaio ruotando il pestello da sinistra verso destra e contemporaneamente ruotate il mortaio in senso contrario (da destra verso sinistra), prendendolo per le "orecchie" ,ovvero le 4 sporgenze tondeggianti che caratterizzano il mortaio stesso (7), continuate così fino a quando dalle foglie di basilico non uscirà un liquido verde brillante (8), a questo punto aggiungete i pinoli (9) e ricominciate a pestare per ridurre in crema</Procedimento>
+    </Ricetta>
+    <ListaIngredienti>
+        <Ingrediente misura="g" quantita="200" tipo="fagiolini"/>
+        <Ingrediente misura="g" quantita="350" tipo="linguine"/>
+        <Ingrediente quantita="2" tipo="patate"/>
+        <Ingrediente tipo="olio"/>
+    </ListaIngredienti>
+    <Procedimento>Per preparare le bavette al pesto, patate e fagiolini per prima cosa procuratevi 4 porzioni di pesto alla genovese o preparatelo secondo la nostra ricetta (cliccando sul link). Lavate i fagiolini e spuntate le parti terminali, quindi lessateli in acqua salata (1) poi scolateli bene quando ancora risultano croccanti e tagliateli in due o tre parti (2). Sbucciate le patate, tagliatele a piccoli dadini (3) (del lato di circa 1cm e ½) e mettetele a cuocere in abbondante acqua bollente e salata (4), quando l'acqua riprenderà a bollire versatevi anche le bavette che, così facendo, saranno pronte insieme alle patate (5). In un'insalatiera ponete i fagiolini, l'olio ed il pesto (6). Aggiungete qualche cucchiaio di acqua di cottura al composto per renderlo più cremoso (7) e mescolate delicatamente in modo da amalgamare bene gli ingredienti (8). Scolate bene la pasta con le patate, e versatela nel contenitore con il pesto e i fagiolini (9). Mescolate ora molto bene tutti gli ingredienti ma con delicatezza per non spappolare le verdure, impiattate e servite le bavette al pesto, patate e fagiolini immediatamente guarnendo i piatti con delle foglie di basilico.</Procedimento>
+</Ricetta>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Ricetta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nome="torta alla panna">
+    <Opzioni>
+        <Salva>tortapanna</Salva>
+        <Autore>ptommasi</Autore>
+        <Categoria>
+            <Superiore>Dolci</Superiore>
+            <Inferiore>Torte</Inferiore>
+        </Categoria>
+        <Difficolta>7</Difficolta>
+        <Tempo>150</Tempo>
+        <Privata>true</Privata>
+        <Strumenti>
+            <Strumento>marisa</Strumento>
+        </Strumenti>
+        <Festivita>San Valentino</Festivita>
+    </Opzioni>
+    <Ricetta nome="crema">
+        <Opzioni>
+            <Salva>crema</Salva>
+            <Tempo>30</Tempo>
+            <Strumenti>
+                <Strumento>fruste</Strumento>
+            </Strumenti>
+            <Promemoria>a fiamma bassa </Promemoria>
+        </Opzioni>
+        <ListaIngredienti>
+            <Ingrediente quantita="6" tipo="tuorli"/>
+            <Ingrediente misura="gr" quantita="220" tipo="zucchero"/>
+            <Ingrediente misura="g" quantita="120" tipo="farina"/>
+            <Ingrediente misura="l" quantita="1" tipo="latte"/>
+            <Ingrediente quantita="2" tipo="scorze di limone"/>
+        </ListaIngredienti>
+        <Procedimento>frulla prima i tuorli delle uova con zucchero e vanillina, poi metti la farina, poi il latte poco alla volta. Puoi usare le fruste elettriche ma a velocitÃ  minima</Procedimento>
+    </Ricetta>
+    <Ricetta nome="pan di spagna">
+        <Opzioni>
+            <Salva>pandispagna</Salva>
+            <Autore>giallozafferano</Autore>
+            <Tempo>60</Tempo>
+            <Strumenti>
+                <Strumento>teglia quadrata</Strumento>
+                <Strumento>fruste elettriche</Strumento>
+            </Strumenti>
+            <Promemoria>forno a 180 gardi </Promemoria>
+        </Opzioni>
+        <ListaIngredienti>
+            <Ingrediente misura="g" quantita="75" tipo="farina"/>
+            <Ingrediente misura="g" quantita="75" tipo="fecola di patate"/>
+            <Ingrediente quantita="5" tipo="uova"/>
+            <Ingrediente misura="bustina" quantita="1" tipo="vanillina"/>
+            <Ingrediente misura="pizzico" quantita="1" tipo="sale"/>
+            <Ingrediente misura="g" quantita="150" tipo="zucchero"/>
+        </ListaIngredienti>
+        <Procedimento>Per la preparazione del pan di Spagna, dividete gli albumi dai tuorli (rif: immagine 1) mettendoli in due ciotole grandi separate (rif: immagine 2); iniziate a sbattere con l'aiuto delle fruste elettriche, o della planetaria, i tuorli con metÃ  dello zucchero (rif: immagine 3) fino ad ottenere un composto spumoso, gonfio e di colore giallo chiaro (rif: immagine 4). Sbattete ora, dopo aver pulito molto bene le vostre fruste, anche gli albumi ((rif: immagine 5)) e dopo circa 5 minuti quando saranno giÃ  abbastanza gonfi e bianchi, aggiungete il restante zucchero (rif: immagine 6) e proseguite a montare ancora per qualche minuto (il trucco per sapere se i bianchi sono montati a neve davvero ferma sta nell'inclinare leggermente la ciotola usata, se il composto scivola ancora vuol dire che non Ã¨ pronto, al contrario se Ã¨ ben montato non si muoverÃ  dalle pareti della vostra ciotola). Unite gli albumi montati ai turli montati (anche in un'altra ciotola piÃ¹ grande) e a questo punto aggiungete la farina e la fecola di patate setacciate insieme (rif: immagine 7) (volendo la vanillina), versandole nel composto tramite un setaccio per far si che non si formino grumi. Mescolate il tutto con un cucchiaio di legno fino ad ottenere un composto omogeneo, facendo attenzione a non smontarlo. Imburrate (rif: immagine 8) e infarinate (rif: immagine 9) per bene una teglia rotonda a cerniera del diametro di 24 cm e versate l'impasto (rif: immagine 10) al centro dello stampo livellandolo per bene (rif: immagine 11). Fate preriscaldare il forno a 180Â° e infornate il vostro pan di spagna per almeno 35-40 minuti senza mai aprire il forno nella prima mezz'ora di cottura. Estraete lo stampo dal forno (rif: immagine 12) e fate raffreddare il pan di spagna nello stampo prima di aprirlo.</Procedimento>
+    </Ricetta>
+    <ListaIngredienti>
+        <Ingrediente tipo="panna"/>
+    </ListaIngredienti>
+    <Procedimento>Taglia a metÃ  il pan di spagna, riempilo con la crema, guarnisci con la panna.</Procedimento>
+</Ricetta>

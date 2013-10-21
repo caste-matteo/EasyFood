@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JenaLibs"/>
+	<classpathentry kind="lib" path="res/swing-layout-1.0.4.jar"/>
+	<classpathentry kind="lib" path="res/jgraphx.jar"/>
+	<classpathentry kind="lib" path="C:/Users/caste/workspace/Cuciniamo/Cuciniamo/dist/lib/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
